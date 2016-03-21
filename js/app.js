@@ -1,0 +1,32 @@
+define(["jq","underscore","backbone","conllection2/conll","view/LianXiView","view/touchView","rotate"],function($,_,Backbone,modelsObj,views2){
+	modelsObj.fetch();
+	$("#rotate").rotate({
+		angle:0, 
+		duration: 1000000, 
+		animateTo: 2160
+	}); 
+	//发送get请求,把查询查来的数据全部放到集合里面，相当于添加了很多数据，这下自动会触发add时间，从而调用addOne方法，还返回了一个参数就是请求过来的每一条数据模型
+	/*Backbone.sync=function(methot,success,a){
+		console.log(methot);
+		if(methot=="read"){
+			$.get("c.php",{},function(Date){
+				modelsObj.add(Date);
+				console.log(Date);
+			});
+			alert("获取");
+		}
+		if(methot=="create"){
+			$.post("c.php",success.toJSON(),function(data){
+				console.log(data);
+				success.set({id:data.id});
+			});
+			alert("创建");
+		}
+		if(methot=="update"){
+			alert("更新");
+		}
+		if(methot=="delete"){
+			alert("删除");
+		}
+	}*/
+});

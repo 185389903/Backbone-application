@@ -1,0 +1,11 @@
+{
+  "name": "gruntCeShi",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-html-minify": "^0.3.1"
+  }
+}

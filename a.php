@@ -31,6 +31,8 @@
 		   	echo $json;
 		}
 		//添加
+		
+		//添加2
 	   	if($type=="GET"){
 	   		$querySql="select * from name";
 	   		$queryRes=$mysqli->query($querySql);

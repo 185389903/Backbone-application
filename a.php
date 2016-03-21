@@ -30,6 +30,7 @@
 		   	$json=json_encode($arr);
 		   	echo $json;
 		}
+		//
 	   	if($type=="GET"){
 	   		$querySql="select * from name";
 	   		$queryRes=$mysqli->query($querySql);

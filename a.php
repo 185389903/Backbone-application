@@ -2,7 +2,7 @@
    header("Content-Type:application/json;charset=utf-8");   
    include("link.php");
    $linkDataObject=new linkDatabase(function($mysqli){
-   		//
+   		//1
 	   	$val=json_decode(file_get_contents("php://input"));
 	   	$type=$_SERVER['REQUEST_METHOD'];
 		if($type=="DELETE"){
@@ -11,7 +11,7 @@
 			$delete="delete from name where id=".$ids_."";
 			$mysqli->query($delete);
 		}
-		//
+		//1
 		if($type=="POST"){
 			$sqlString="insert into name(title) values('{$val->name}')";
 		   	$mysqli->query($sqlString);
@@ -59,6 +59,6 @@
 			$mysqli->query($upload);
 	   		echo "PUT";
 	   	}
-	   	
+	   	、
    });
 ?> 

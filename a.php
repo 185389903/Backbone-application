@@ -33,11 +33,11 @@
 		   	echo $json;
 		}
 
-		//添加了一个注释
+		//添加
 		
 	
 	   	if($type=="GET"){
-	   		//添加
+	   		//
 	   		$querySql="select * from name";
 	   		$queryRes=$mysqli->query($querySql);
 	   		$arrQ1=array();
@@ -59,6 +59,6 @@
 			$mysqli->query($upload);
 	   		echo "PUT";
 	   	}
-	   	//
+	   	
    });
 ?> 

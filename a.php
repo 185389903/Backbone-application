@@ -30,7 +30,7 @@
 		   	$json=json_encode($arr);
 		   	echo $json;
 		}
-		//
+		//添加了一个注释
 	   	if($type=="GET"){
 	   		$querySql="select * from name";
 	   		$queryRes=$mysqli->query($querySql);

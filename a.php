@@ -32,6 +32,7 @@
 		}
 
 		//添加了一个注释
+		//添加了一个注释2
 	   	if($type=="GET"){
 	   		$querySql="select * from name";
 	   		$queryRes=$mysqli->query($querySql);

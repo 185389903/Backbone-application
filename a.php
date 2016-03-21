@@ -32,9 +32,10 @@
 		}
 
 		//添加了一个注释
-		//添加
-		//添加了一个注释2
+		
+	
 	   	if($type=="GET"){
+	   		//添加
 	   		$querySql="select * from name";
 	   		$queryRes=$mysqli->query($querySql);
 	   		$arrQ1=array();
@@ -47,6 +48,7 @@
 				array_push($arrQ2,$arrQ1);
 	   		};
 	   		echo json_encode($arrQ2);
+	   			//添加了一个注释2
 	   	}
 	   	if($type=="PUT"){
 	   		$ids=explode("/",$_SERVER['QUERY_STRING']);

@@ -11,8 +11,9 @@
 			$delete="delete from name where id=".$ids_."";
 			$mysqli->query($delete);
 		}
-		//11111
-		//8
+
+		//111
+
 		if($type=="POST"){
 			$sqlString="insert into name(title) values('{$val->name}')";
 		   	$mysqli->query($sqlString);
@@ -34,9 +35,13 @@
 		   	echo $json;
 		}
 
-		//添1
-		//1
+
 	
+
+		//添加0
+		
+	、、
+
 	   	if($type=="GET"){
 	   		//
 	   		$querySql="select * from name";
